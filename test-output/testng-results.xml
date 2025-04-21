@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="10" passed="7" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-10T00:19:33 EDT" name="Suite" finished-at="2025-04-10T00:21:38 EDT" duration-ms="124392">
+    <groups>
+    </groups>
+    <test started-at="2025-04-10T00:19:33 EDT" name="Ezra Booking Process Automation" finished-at="2025-04-10T00:21:38 EDT" duration-ms="124392">
+      <class name="razinautomation.tests.EzraBookingProcess">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:19:34 EDT" name="launchApplication" finished-at="2025-04-10T00:19:36 EDT" duration-ms="2621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestLogin(java.util.HashMap)[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:19:36 EDT" name="EzraTestLogin" data-provider="getData" finished-at="2025-04-10T00:19:39 EDT" duration-ms="3209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=112233Aa, product=Full Body, email=razin.farhan2018+ezramc@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:19:39 EDT" name="tearDown" finished-at="2025-04-10T00:19:40 EDT" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:19:40 EDT" name="launchApplication" finished-at="2025-04-10T00:19:42 EDT" duration-ms="2125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestLogin(java.util.HashMap)[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:19:42 EDT" name="EzraTestLogin" data-provider="getData" finished-at="2025-04-10T00:19:46 EDT" duration-ms="4483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=112233Aa, product=Full Body, email=razin.farhan2018+ezramb@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:19:46 EDT" name="tearDown" finished-at="2025-04-10T00:19:46 EDT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:19:46 EDT" name="launchApplication" finished-at="2025-04-10T00:19:48 EDT" duration-ms="1823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestTC01(java.util.HashMap)[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:19:48 EDT" name="EzraTestTC01" data-provider="getData" finished-at="2025-04-10T00:20:05 EDT" duration-ms="17170" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=112233Aa, product=Full Body, email=razin.farhan2018+ezramc@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='encounter-card disabled'])[1]"}
+  (Session info: chrome=133.0.6943.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-57-generic', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [809fa01a46f3f7b385d26f5589f381d3, findElement {value=(//div[@class='encounter-card disabled'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.141, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43943/devtoo..., se:cdpVersion: 133.0.6943.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 809fa01a46f3f7b385d26f5589f381d3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='encounter-card disabled'])[1]"}
+  (Session info: chrome=133.0.6943.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-57-generic', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [809fa01a46f3f7b385d26f5589f381d3, findElement {value=(//div[@class='encounter-card disabled'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.141, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43943/devtoo..., se:cdpVersion: 133.0.6943.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 809fa01a46f3f7b385d26f5589f381d3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at razinautomation.tests.EzraBookingProcess.EzraTestTC01(EzraBookingProcess.java:129)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestTC01 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:20:05 EDT" name="tearDown" finished-at="2025-04-10T00:20:06 EDT" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:20:06 EDT" name="launchApplication" finished-at="2025-04-10T00:20:07 EDT" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestTC01(java.util.HashMap)[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:20:07 EDT" name="EzraTestTC01" data-provider="getData" finished-at="2025-04-10T00:20:21 EDT" duration-ms="13632" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=112233Aa, product=Full Body, email=razin.farhan2018+ezramb@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#dob"}
+  (Session info: chrome=133.0.6943.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-57-generic', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52a1931a3ebfcdd7d76e869a341d09f2, findElement {value=dob, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.141, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37697/devtoo..., se:cdpVersion: 133.0.6943.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52a1931a3ebfcdd7d76e869a341d09f2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dob"}
+  (Session info: chrome=133.0.6943.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-57-generic', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52a1931a3ebfcdd7d76e869a341d09f2, findElement {value=dob, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.141, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37697/devtoo..., se:cdpVersion: 133.0.6943.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52a1931a3ebfcdd7d76e869a341d09f2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at razinautomation.tests.EzraBookingProcess.EzraTestTC01(EzraBookingProcess.java:111)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestTC01 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:20:21 EDT" name="tearDown" finished-at="2025-04-10T00:20:21 EDT" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:20:21 EDT" name="launchApplication" finished-at="2025-04-10T00:20:23 EDT" duration-ms="1751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestTC02()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:20:23 EDT" name="EzraTestTC02" finished-at="2025-04-10T00:20:59 EDT" duration-ms="36287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestTC02 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:20:59 EDT" name="tearDown" finished-at="2025-04-10T00:21:00 EDT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:00 EDT" name="launchApplication" finished-at="2025-04-10T00:21:02 EDT" duration-ms="2000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestTC03()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:02 EDT" name="EzraTestTC03" finished-at="2025-04-10T00:21:02 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestTC03 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:02 EDT" name="tearDown" finished-at="2025-04-10T00:21:02 EDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:02 EDT" name="launchApplication" finished-at="2025-04-10T00:21:04 EDT" duration-ms="1907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestTC04()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:04 EDT" name="EzraTestTC04" finished-at="2025-04-10T00:21:14 EDT" duration-ms="10000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestTC04 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:14 EDT" name="tearDown" finished-at="2025-04-10T00:21:14 EDT" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:14 EDT" name="launchApplication" finished-at="2025-04-10T00:21:16 EDT" duration-ms="2084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestTC05()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:16 EDT" name="EzraTestTC05" finished-at="2025-04-10T00:21:36 EDT" duration-ms="19841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestTC05 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:36 EDT" name="tearDown" finished-at="2025-04-10T00:21:36 EDT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:36 EDT" name="launchApplication" finished-at="2025-04-10T00:21:38 EDT" duration-ms="1909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="EzraTestTC06()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:38 EDT" name="EzraTestTC06" finished-at="2025-04-10T00:21:38 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EzraTestTC06 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.EzraBookingProcess@5ddeb7cb]" started-at="2025-04-10T00:21:38 EDT" name="tearDown" finished-at="2025-04-10T00:21:38 EDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- razinautomation.tests.EzraBookingProcess -->
+    </test> <!-- Ezra Booking Process Automation -->
+  </suite> <!-- Suite -->
+</testng-results>

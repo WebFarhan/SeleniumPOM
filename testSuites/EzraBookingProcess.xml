@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+
+	<listeners>
+		<listener class-name="razinautomation.TestComponents.Listeners"/>
+	</listeners>
+
+  <test thread-count="5" name="Ezra Booking Process Automation">
+    <classes>
+      <class name="razinautomation.tests.EzraBookingProcess">
+      	<methods>
+	    	  <exclude name="EzraTestMemberSignUp"/>
+	    </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+      
+</suite> <!-- Suite -->

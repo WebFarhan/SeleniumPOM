@@ -1,0 +1,8 @@
+/home/oem/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/razinautomation/AbstractComponents/AbstractComponent.java
+/home/oem/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/razinautomation/pageobjects/CartPage.java
+/home/oem/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/razinautomation/pageobjects/CheckoutPage.java
+/home/oem/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/razinautomation/pageobjects/ConfirmationPage.java
+/home/oem/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/razinautomation/pageobjects/LandingPage.java
+/home/oem/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/razinautomation/pageobjects/OrderPage.java
+/home/oem/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/razinautomation/pageobjects/ProductCatalogue.java
+/home/oem/eclipse-workspace/SeleniumFrameworkDesign/src/main/java/razinautomation/resources/ExtentReporterNG.java

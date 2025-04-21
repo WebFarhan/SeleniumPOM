@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-23T01:17:01 EDT" name="Suite" finished-at="2025-03-23T01:17:53 EDT" duration-ms="52549">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.loginErrorValidation()[pri:0, instance:razinautomation.tests.ErrorValidationsTest@34bde49d]" name="loginErrorValidation" class="razinautomation.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" name="submitOrder" class="razinautomation.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-03-23T01:17:01 EDT" name="Error Validation Test" finished-at="2025-03-23T01:17:29 EDT" duration-ms="27643">
+      <class name="razinautomation.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.ErrorValidationsTest@34bde49d]" started-at="2025-03-23T01:17:01 EDT" name="launchApplication" finished-at="2025-03-23T01:17:08 EDT" duration-ms="6773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:razinautomation.tests.ErrorValidationsTest@34bde49d]" started-at="2025-03-23T01:17:08 EDT" name="ProductErrorValidation" finished-at="2025-03-23T01:17:22 EDT" duration-ms="14723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.ErrorValidationsTest@34bde49d]" started-at="2025-03-23T01:17:22 EDT" name="tearDown" finished-at="2025-03-23T01:17:23 EDT" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.ErrorValidationsTest@34bde49d]" started-at="2025-03-23T01:17:23 EDT" name="launchApplication" finished-at="2025-03-23T01:17:27 EDT" duration-ms="4935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:razinautomation.tests.ErrorValidationsTest@34bde49d]" started-at="2025-03-23T01:17:27 EDT" name="loginErrorValidation" finished-at="2025-03-23T01:17:28 EDT" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.ErrorValidationsTest@34bde49d]" started-at="2025-03-23T01:17:28 EDT" name="tearDown" finished-at="2025-03-23T01:17:29 EDT" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- razinautomation.tests.ErrorValidationsTest -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2025-03-23T01:17:01 EDT" name="Submit Order Test" finished-at="2025-03-23T01:17:53 EDT" duration-ms="52549">
+      <class name="razinautomation.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:01 EDT" name="launchApplication" finished-at="2025-03-23T01:17:07 EDT" duration-ms="6247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:07 EDT" name="submitOrder" data-provider="getData" finished-at="2025-03-23T01:17:24 EDT" duration-ms="16117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Justdoit@123, product=ZARA COAT 3, email=razin.qa@example.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:24 EDT" name="tearDown" finished-at="2025-03-23T01:17:24 EDT" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:24 EDT" name="launchApplication" finished-at="2025-03-23T01:17:30 EDT" duration-ms="6441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:30 EDT" name="submitOrder" data-provider="getData" finished-at="2025-03-23T01:17:47 EDT" duration-ms="16852" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Justdoit@123, product=ADIDAS ORIGINAL, email=razin@example.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:47 EDT" name="tearDown" finished-at="2025-03-23T01:17:47 EDT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:47 EDT" name="launchApplication" finished-at="2025-03-23T01:17:51 EDT" duration-ms="4428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:51 EDT" name="OrderHistoryTest" finished-at="2025-03-23T01:17:53 EDT" depends-on-methods="razinautomation.tests.SubmitOrderTest.submitOrder" duration-ms="1805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:razinautomation.tests.SubmitOrderTest@231f98ef]" started-at="2025-03-23T01:17:53 EDT" name="tearDown" finished-at="2025-03-23T01:17:53 EDT" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- razinautomation.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
