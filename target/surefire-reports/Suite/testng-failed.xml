@@ -4,18 +4,6 @@
   <listeners>
     <listener class-name="razinautomation.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
-    <classes>
-      <class name="razinautomation.tests.SubmitOrderTest">
-        <methods>
-          <include name="OrderHistoryTest"/>
-          <include name="launchApplication"/>
-          <include name="tearDown"/>
-          <include name="submitOrder" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- razinautomation.tests.SubmitOrderTest -->
-    </classes>
-  </test> <!-- Submit Order Test(failed) -->
   <test thread-count="5" parallel="tests" name="Error Validation Test(failed)" verbose="0">
     <classes>
       <class name="razinautomation.tests.ErrorValidationsTest">
@@ -23,7 +11,6 @@
           <include name="launchApplication"/>
           <include name="tearDown"/>
           <include name="ProductErrorValidation"/>
-          <include name="loginErrorValidation"/>
         </methods>
       </class> <!-- razinautomation.tests.ErrorValidationsTest -->
     </classes>

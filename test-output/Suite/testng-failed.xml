@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="razinautomation.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Ezra Booking Process Automation(failed)">
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
     <classes>
-      <class name="razinautomation.tests.EzraBookingProcess">
+      <class name="razinautomation.tests.SubmitOrderTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="EzraTestTC01" invocation-numbers="0 1"/>
+          <include name="OrderHistoryTest"/>
           <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="submitOrder" invocation-numbers="0"/>
         </methods>
-      </class> <!-- razinautomation.tests.EzraBookingProcess -->
+      </class> <!-- razinautomation.tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Ezra Booking Process Automation(failed) -->
+  </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

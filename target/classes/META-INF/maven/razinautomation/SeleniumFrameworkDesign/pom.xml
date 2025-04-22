@@ -27,7 +27,7 @@
 	    <groupId>org.testng</groupId>
 	    <artifactId>testng</artifactId>
 	    <version>7.11.0</version>
-	    <scope>test</scope>
+	   <!--<scope>test</scope>-->
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 	<dependency>
@@ -43,8 +43,21 @@
 	    <version>5.1.2</version>
 	</dependency>
 
-    
-    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.22.0</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.22.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 	<dependency>
 	    <groupId>com.fasterxml.jackson.core</groupId>
 	    <artifactId>jackson-databind</artifactId>
@@ -99,6 +112,27 @@
   	</build>
   
   </profile>
+
+  <profile>
+  <id>CucumberTests</id>
+   <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+  		 <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <version>3.5.2</version>
+	        <configuration>
+	          <includes>
+	          	<include>**/TestNGTestRunner.java</include>
+	          </includes>
+	        </configuration>
+       </plugin>
+       </plugins>    
+  	 </pluginManagement>
+  	</build>
+  
+  </profile>
   
   <profile>
   <id>ErrorValidation</id>
@@ -125,12 +159,12 @@
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.4.0</version>
         </plugin>
-        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+				<!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
       <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.3.1</version>
@@ -141,8 +175,8 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.13.0</version>
         </plugin>
-           
-<!--        <plugin>
+
+				<!--        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.5.1</version>
@@ -161,8 +195,8 @@
             <suiteXmlFile>testSuites/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
-       </plugin>        
-<!-- 
+       </plugin>
+				<!-- 
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.4.2</version>
@@ -177,7 +211,7 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>3.1.2</version>
         </plugin>
-        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+				<!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.12.1</version>
